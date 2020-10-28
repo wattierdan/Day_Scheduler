@@ -36,11 +36,9 @@
 //global vars
 var currentMonth = dayjs().format('MM')
 var curentHour = dayjs().format('H')
-var toDos = [
-  {id: "potato",
-   text: " "
-  },
-]
+var toDos = []
+
+
 
 //gets elements
 var header = $('header')
@@ -49,10 +47,10 @@ var container = $('.container')
 var timeBlocks = $('.time_block')
 
 getToDos()
-console.log(toDos)
 
 
 //prints saved todos to correct timeblock
+
 for (var i = 0; i < timeBlocks.length; i++) {
   for (var j = 0; j < toDos.length; j++) {
     if  (toDos[j].id === timeBlocks[i].id){
@@ -133,6 +131,9 @@ function saveText() {
 function getToDos() {
  var str = localStorage.getItem('textContent')
  toDos = JSON.parse(str)
+ if (!toDos) {
+   toDos = []
+ }
 }
 
 
