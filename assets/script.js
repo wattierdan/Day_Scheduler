@@ -36,7 +36,11 @@
 //global vars
 var currentMonth = dayjs().format('MM')
 var curentHour = dayjs().format('H')
-var toDos = []
+var toDos = [
+  {id: "potato",
+   text: " "
+  },
+]
 
 //gets elements
 var header = $('header')
@@ -45,7 +49,7 @@ var container = $('.container')
 var timeBlocks = $('.time_block')
 
 getToDos()
-
+console.log(toDos)
 
 
 //prints saved todos to correct timeblock
