@@ -63,7 +63,7 @@ $('#currentDay').text(dayjs().format('ddd MMM DD YYYY h:mm A'))
 
 //different backgrounds for the seasons
 //if spring
-if (currentMonth >=3 || currentMonth <=5) {
+/*if (currentMonth >=3 || currentMonth <=5) {
   body.css("background-image", 'url("https://images.pexels.com/photos/1038508/blossom-tree-sky-nature-1038508.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")')
   }
 //if summer
@@ -78,7 +78,7 @@ if (currentMonth >=9 || currentMonth <=11) {
 //if winter
 if (currentMonth >=12 || currentMonth <=2) {
   body.css("background-image", 'url("https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")')
-  }
+  }*/
 
 //function to determine what color a time_block should be
 function whatColor(){
