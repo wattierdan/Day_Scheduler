@@ -32,8 +32,7 @@
 
 
 //global vars
-//var currentMonth = dayjs().format('MM')
-var currentMonth = 4
+var currentMonth = dayjs().format('MM')
 var curentHour = dayjs().format('H')
 var toDos = []
 
