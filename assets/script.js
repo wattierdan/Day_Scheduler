@@ -20,13 +20,11 @@
 //THEN each time block is color-coded to indicate whether it is in the past, present, or future
 //WHEN I click into a time block
 //THEN I can enter an event
-
 //WHEN I click the save button for that time block
 //THEN the text for that event is saved in local storage
 //WHEN I refresh the page
 //THEN the saved events persist
-
-
+////////////////////////////////////////////////////////////
 //when app loads it loads with current hour at top of screen
 //display tabs for days of the week
 //when a day of the week is clicked it loads events for that day
@@ -45,6 +43,8 @@ var header = $('header')
 var body = $('body')
 var container = $('.container')
 var timeBlocks = $('.time_block')
+var fade = $('.fade')
+var textInput =$('.text_input')
 
 getToDos()
 
@@ -74,8 +74,8 @@ if (currentMonth >=6 || currentMonth <=8) {
   }
 //if fall
 if (currentMonth >=9 || currentMonth <=11) {
-  header.css("background-image", 'url("https://images.pexels.com/photos/1545345/pexels-photo-1545345.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")')
-  body.css("background-image", 'url("https://images.pexels.com/photos/1545345/pexels-photo-1545345.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")')
+  fade.css("background-image", 'url("https://images.pexels.com/photos/3144214/pexels-photo-3144214.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")')
+  body.css("background-image", 'url("https://images.pexels.com/photos/3144214/pexels-photo-3144214.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")')
 }
 //if winter
 if (currentMonth >=12 || currentMonth <=2) {
@@ -87,11 +87,11 @@ function whatColor(){
   for (i = 0; i < timeBlocks.length; i++) {
     //console.log(timeBlocks[i].id, curentHour)
     if (parseInt(timeBlocks[i].id) == curentHour) {
-      document.getElementById([i]).style.backgroundColor = "#d17976";
+      document.getElementById([i]).style.backgroundColor = "	#ff2e2e";
       document.getElementById([i]).className += " scroll";
     }
     if (parseInt(timeBlocks[i].id) > curentHour) {
-      document.getElementById([i]).style.backgroundColor = "#233c5d"
+      document.getElementById([i]).style.backgroundColor = "#90EE90"
     }  
   }
 }
