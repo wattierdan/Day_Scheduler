@@ -1,6 +1,6 @@
 body {
-  background-color: transparent;
   background-attachment: fixed;
+  background-position: center;
   opacity: .9;
   z-index: -2;
   font-family: 'Kaushan Script', cursive;

@@ -32,7 +32,8 @@
 
 
 //global vars
-var currentMonth = dayjs().format('MM')
+//var currentMonth = dayjs().format('MM')
+var currentMonth = 4
 var curentHour = dayjs().format('H')
 var toDos = []
 
@@ -65,20 +66,23 @@ $('#currentDay').text(dayjs().format('ddd MMM DD YYYY h:mm A'))
 
 //different backgrounds for the seasons
 //if spring
-if (currentMonth >=3 || currentMonth <=5) {
-  body.css("background-image", 'url("https://images.pexels.com/photos/1038508/blossom-tree-sky-nature-1038508.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")')
+if (currentMonth >=3 && currentMonth <=5) {
+  fade.css("background-image", 'url("https://images.unsplash.com/photo-1493589976221-c2357c31ad77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80")')
+  body.css("background-image", 'url("https://images.unsplash.com/photo-1493589976221-c2357c31ad77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80")')
   }
 //if summer
-if (currentMonth >=6 || currentMonth <=8) {
+if (currentMonth >=6 && currentMonth <=8) {
+  fade.css("background-image", 'url("https://images.pexels.com/photos/189848/pexels-photo-189848.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")')
   body.css("background-image", 'url("https://images.pexels.com/photos/189848/pexels-photo-189848.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")')
   }
 //if fall
-if (currentMonth >=9 || currentMonth <=11) {
-  fade.css("background-image", 'url("https://images.pexels.com/photos/3144214/pexels-photo-3144214.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")')
-  body.css("background-image", 'url("https://images.pexels.com/photos/3144214/pexels-photo-3144214.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")')
+if (currentMonth >=9 && currentMonth <=11) {
+  fade.css("background-image", 'url("https://images.unsplash.com/photo-1514064019862-23e2a332a6a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2116&q=80")')
+  body.css("background-image", 'url("https://images.unsplash.com/photo-1514064019862-23e2a332a6a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2116&q=80")')
 }
 //if winter
-if (currentMonth >=12 || currentMonth <=2) {
+if (currentMonth ==12 || currentMonth <=2) {
+  fade.css("background-image", 'url("https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")')
   body.css("background-image", 'url("https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")')
   }
 
