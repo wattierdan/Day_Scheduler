@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="./assets/markdownstyle.css"/>
 
 # Work Day Scheduler
-* a daily scheduling application utilizing jQuery
+* a daily scheduling application utilizing jQuery and Day.js
 * when app is opened the current date and time are displayed in the header and page will automaticly scroll the current hour block into veiw
 * user can add events to calander by inputing text into a time block and clicking the add to calander button:
 
