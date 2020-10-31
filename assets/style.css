@@ -1,40 +1,35 @@
 body {
   background-attachment: fixed;
   background-position: center;
+  font-family: 'Kaushan Script', cursive;
   opacity: .9;
   z-index: -2;
-  font-family: 'Kaushan Script', cursive;
 }
 
-
 .container {
-  
-  padding-top: 28vw ;
-  z-index: -1;
-  width: 100%;
   margin: auto;
-
-
+  padding-top: 28vw ;
+  width: 100%;
+  z-index: -1;
 }
 
 .fade {
-  height: 25vw;
+  background-color: black;
   position: fixed;
   top: 0;
   right: 0;
+  height: 25vw;
   width: 100%;
-  background-color: black;
   opacity: .5;
   filter: blur(5px);
   z-index: -1;
 }
 
 header {
-  text-align: center;
-
   background-color: black;
-  text-shadow: black 5px 5px 5px;
   color: white;
+  text-align: center;
+  text-shadow: black 5px 5px 5px;
   height: 25vw;
   position: fixed;
   top: 0;
@@ -49,65 +44,57 @@ header {
   margin-bottom: 0px;
 }
 
-
-
 #currentDay {
   font-size: 5vw;
   margin-top: 0px;
 }
 
-
-
+/*general styles for timeblocks*/
 .time_block{
-  text-align: center;
+  background-color: #817c86;
+  border: white solid 2px;
   border-bottom-right-radius: 15px ;
   border-top-right-radius: 15px ;
-  border: white solid 2px;
   border-left: none;
-  background-color: #817c86;
+  text-align: center;
   height: 75px;
   width: 97%;
-  z-index: -1;
   opacity: .9;
   margin: auto;
   margin-bottom: 5px;
+  z-index: -1;
 }
-
-
 .time_block:hover {
+  border: black solid 4px;
   transition: all ease-in .2s;
   transform: scale(1.02);
-  border: black solid 4px;
 }
 
 
+/*styles add to calendar button*/
 .save_btn {
-  height: 75px;
-  width: 40px;
   background-color:	white;
-  opacity: .7;
   border: none;
   border-bottom-right-radius: 12px ;
   border-top-right-radius: 12px ;
   float: right;
-  outline: none;
   text-align: center;
+  height: 75px;
+  width: 40px;
+  opacity: .7;
+  outline: none;
 }
-
 .save_btn:hover {
   cursor: pointer;
 }
-
-
 img {
   height: 20px;
-  
- 
 }
 img:active {
   transform: scale(.9);
 }
 
+/*styles hour display on timeblocks*/
 .hour_block {
   width: 50px;
   height: 45px;
@@ -118,10 +105,9 @@ img:active {
   padding-top: 30px;
   font-weight: bold;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
-
 }
 
+/*text inputs for timeblocks*/
 .text_input {
   height: 65px;
   width: 30vw;
@@ -135,59 +121,34 @@ img:active {
   resize: none;
   font-size: 24px;
   cursor: context-menu;
-  
-
-  
 }
 
+/*styles scrollbar within text inputs*/
 .text_input::-webkit-scrollbar {
   width: 0px;
 }
 
-
-
-
-.container::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 5%;
-}
-
-.container::-webkit-scrollbar {
-  width: 5px;
-}
-
-
-
+/*adds responsiveness*/
 @media (max-width: 655px) {
   .text_input {
     width: 60vw;
-  }
-  
+  }  
 }
-
-
 @media (min-width: 900px) {
- 
   header {
     height: 220px;
   }
-
   .container {
     padding-top: 240px;
     width: 50%;
     min-width: 800px;
   }
-
-
   .fade {
     height: 220px;
   }
-  
   .title {
     font-size: 100px;
-  
   }
-  
   #currentDay {
     font-size: 40px;
    
