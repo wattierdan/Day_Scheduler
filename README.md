@@ -6,7 +6,7 @@
 * when app is opened the current date and time are displayed in the header and page will automaticly scroll the current hour block into veiw
 * user can add events to calander by inputing text into a time block and clicking the add to calander button:
 
-    <button class="save_btn"><img src="./assets/imgs/add.png" alt="lock_icon"></button> 
+    ![button-image](./assets/imgs/addmd.png)
 
 * hour blocks are displayed will the following color code:
  
@@ -31,4 +31,4 @@
 * [link](https://wattierdan.github.io/Day_Scheduler/) to deployed application
 
 
-![screenshot](./assets/imgs/screencapture-file-C-Users-Dan-Projects-javascript-scheduler-index-html-2020-10-30-09_55_29.png)
+![screenshot](./assets/imgs/screencapture-file-C-Users-Dan-Projects-javascript-scheduler-index-html-2020-10-31-07_53_23.png)
